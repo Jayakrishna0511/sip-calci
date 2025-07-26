@@ -1,0 +1,130 @@
+.sip-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.sip-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.sip-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sip-control label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.sip-control input[type='number'] {
+  width: 120px;
+  padding: 5px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.sip-control input[type='range'] {
+  width: 100%;
+}
+
+.sip-range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.sip-output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sip-progress {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.sip-progress svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.sip-legend {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.dot.gray {
+  background-color: #ccc;
+}
+
+.dot.blue {
+  background-color: #4f46e5;
+}
+
+.sip-summary {
+  width: 100%;
+}
+
+.sip-summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.sip-summary-item.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+}
+
+.sip-button {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.sip-button:hover {
+  background-color: #006d6d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sip-grid {
+    grid-template-columns: 1fr;
+  }
+}
